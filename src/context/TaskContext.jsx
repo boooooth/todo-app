@@ -61,6 +61,7 @@ export function TaskProvider({ children }) {
 }
 
 // Shortcut hook so pages can call: const { tasks } = useTasks();
+// eslint-disable-next-line react-refresh/only-export-components
 export function useTasks() {
   return useContext(TaskContext);
 }
