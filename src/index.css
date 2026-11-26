@@ -239,6 +239,24 @@ input:focus, select:focus, textarea:focus {
 }
 .navbar-links a:hover { background: var(--bg); }
 .navbar-links a.active { background: var(--primary); color: #fff; }
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Generic card used by the Settings page */
+.card {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+.card h2 { margin: 0 0 12px; font-size: 1.1rem; }
+.card-danger { border: 1px solid var(--danger); }
+.success { color: var(--low); font-size: 0.9rem; }
 
 /* ========== Responsive (tablets and phones) ========== */
 @media (max-width: 700px) {
