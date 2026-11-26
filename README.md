@@ -4,8 +4,8 @@ A task manager built with React for the AUPP Frontend Development final project.
 Create, edit, delete and complete tasks, organize them by priority, category and due date,
 and find them fast with search, filters and sorting. All data is saved in your browser.
 
-# Live demo: https://todo-app-seven-gray-80.vercel.app/
-# Repository: https://github.com/boooooth/todo-app
+## Live demo: https://todo-app-seven-gray-80.vercel.app/
+## Repository: https://github.com/boooooth/todo-app
 
 ## Features
 - Create, edit, delete and complete tasks
@@ -40,13 +40,16 @@ and find them fast with search, filters and sorting. All data is saved in your b
 - Deployed on Vercel
 
 ## Getting started
+```
 git clone https://github.com/boooooth/todo-app.git
 cd todo-app
 npm install
 npm run dev
 Then open http://localhost:5173
+```
 
 ## Project structure
+```
 src/
 ├── components/   Reusable UI (Navbar, TaskCard, TaskForm, FilterBar)
 ├── context/      Global state (TaskContext, SettingsContext)
@@ -55,6 +58,7 @@ src/
 ├── utils/        Helper functions (date formatting, overdue check)
 ├── App.jsx       Routes
 └── main.jsx      App entry, wraps App in Router and Providers
+```
 
 ## Team
 | Member | Contribution |

@@ -25,7 +25,7 @@ export default function Categories() {
   };
 
   const handleDelete = (category) => {
-    if (window.confirm(Delete category "${category}"?)) {
+    if (window.confirm(`Delete category "${category}"?`)) {
       deleteCategory(category);
     }
   };

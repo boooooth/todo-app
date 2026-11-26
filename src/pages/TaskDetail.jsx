@@ -20,7 +20,7 @@ export default function TaskDetail() {
   }
 
   const handleDelete = () => {
-    if (window.confirm(Delete "${task.title}"?)) {
+    if (window.confirm(`Delete "${task.title}"?`)) {
       deleteTask(task.id);
       navigate("/tasks");
     }
@@ -35,7 +35,7 @@ export default function TaskDetail() {
       <div className="card">
         <h1>{task.title}</h1>
         <div className="task-meta">
-          <span className={badge priority-${task.priority}}>{task.priority}</span>
+          <span className={`badge priority-${task.priority}`}>{task.priority}</span>
           <span className="badge">{task.category}</span>
         </div>
 
@@ -58,7 +58,7 @@ export default function TaskDetail() {
           <button className="btn btn-primary" onClick={() => toggleTask(task.id)}>
             {task.completed ? "Mark as active" : "Mark complete"}
           </button>
-          <Link to={/tasks/${task.id}/edit} className="btn">Edit</Link>
+          <Link to={`/tasks/${task.id}/edit`} className="btn">Edit</Link>
           <button className="btn btn-danger" onClick={handleDelete}>Delete</button>
         </div>
       </div>

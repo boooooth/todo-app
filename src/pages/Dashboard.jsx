@@ -51,7 +51,7 @@ export default function Dashboard() {
 
       <strong>{percent}% complete</strong>
       <div className="progress">
-        <div className="progress-fill" style={{ width: ${percent}% }} />
+        <div className="progress-fill" style={{ width: `${percent}%` }} />
       </div>
 
       {total === 0 ? (
